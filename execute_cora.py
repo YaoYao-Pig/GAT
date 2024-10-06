@@ -42,6 +42,7 @@ nb_classes = y_train.shape[1]
 
 adj = adj.todense()
 
+# 新增的维度用来存储BatchSize
 features = features[np.newaxis]
 adj = adj[np.newaxis]
 y_train = y_train[np.newaxis]
